@@ -35,13 +35,6 @@ body {
     margin: 50px auto;
   }
 
-  a{
-    text-decoration: none;
-    padding: 20px 40px;
-    background-color: rgb(255, 0, 53);
-    color: white;
-
-  }
 
   .docu{
     width: 50vw;
