@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" type="text/css" rel="stylesheet"></link>
+    <title>Kaelyn Braun Final</title>
+    <meta charset="UTF-8" />
+    <!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+  </head>
+
+  <body>
+    <h1>Great Lakes States' Top Causes of Death, 2005</h1>
+    <div class="content">
+
+    <div id="my_dataviz"></div>
+
+    <div id="legend">
+        <!-- accidents -->
+        <svg height="12" width="12">
+            <circle cx="6" cy="6" r="6" fill="#FF0035" />
+          </svg>
+        <p class="legendline">Accidents</p>
+
+        <!-- respiratory disease -->
+        <svg height="12" width="12">
+            <circle cx="6" cy="6" r="6" fill="#8B939C" />
+          </svg>
+        <p class="legendline">Respiratory Disease</p>
+
+        <!-- stroke -->
+        <svg height="12" width="12">
+            <circle cx="6" cy="6" r="6" fill="#59546C" />
+          </svg>
+        <p class="legendline">Stroke</p>
+
+        <!-- cancer -->
+        <svg height="12" width="12">
+            <circle cx="6" cy="6" r="6" fill="#38405F" />
+          </svg>
+        <p class="legendline">Cancer</p>
+
+        <!-- heart disease -->
+        <svg height="12" width="12">
+            <circle cx="6" cy="6" r="6" fill="#0E131F" />
+          </svg>
+        <p class="legendline">Heart Disease</p>
+    </div>
+    </div>
+
+    <div class="docu">
+        <h1>Documentation</h1>
+    
+    <p>In crafting an interactive visualization for the Great Lake States' Top Five Causes of Death, I aimed to make the data accessible and insightful. Choosing a bar graph as the primary visualization type was a deliberate decision, as it facilitates easy comparison of the number of deaths across states and causes. The vertical bars inherently lend themselves to showcasing numerical variations visually.
+    </p>
+    <p>Color played a crucial role in my design choices. I assigned distinct colors to each cause of death—black for heart disease, dark blue for cancer, mauve for stroke, gray for respiratory diseases, and red for accidents. This consistent color code is instrumental in quickly identifying and associating each cause, contributing to a user-friendly experience.
+    </p>
+    <p>To provide additional context and enhance user engagement, I incorporated hover-over functionality. This feature allows users to explore specific details by revealing an information box when hovering over a particular color in a state's bar. It adds an interactive dimension to the visualization, encouraging users to delve deeper into the dataset.</p>
+    <p>Labeling was a key consideration to prevent ambiguity and ensure clarity. The states are positioned along the x-axis, and the number of deaths is represented along the y-axis, ranging from 0 to 80,000 in 10,000 increments. Each axis is clearly labeled, and the color key to the right of the graph helps users understand the significance of each color in the context of causes of death.
+    </p>
+    <p>The choice of colors, the use of bar graphs, interactive features, and clear labeling collectively contribute to an intuitive and informative visualization. The inclusion of five attributes—top 5 causes of deaths, number of total deaths, the state, the year, and number of specific deaths—provides users with a comprehensive understanding of the dataset, regardless of their prior familiarity with the specifics.
+    </p>
+    <p>While developing the interactive visualization, I considered alternative designs that, although ultimately not chosen, could offer different perspectives on the dataset.
+        while developing the interactive visualization, I considered alternative designs that, although ultimately not chosen, could offer different perspectives on the dataset.
+        </p>
+        <p>One alternative was a choropleth map where each state is shaded based on the intensity of a particular cause of death. However, this design was discarded as it might have obscured specific numerical values and made comparisons less straightforward. The bar graph was favored for its simplicity and direct representation of numerical data.
+        </p>
+        <p>Another concept involved using a stacked bar chart to show the total number of deaths in each state, with different segments representing each cause of death. This design was set aside as it could potentially complicate the visualization, making it harder to discern individual causes and compare their respective impacts across states.
+        </p>
+        <p>Considering the temporal aspect of the dataset, I contemplated a line chart that tracks the evolution of each cause of death over the years. However, this design was dismissed in favor of a static snapshot of the data for 2005, as it allowed for a clearer focus on the top five causes and their immediate comparisons.
+        </p>
+        <p>It was quite a process to find the right visualization. I spent a good chunk of time digging into D3, exploring different options to figure out what would work best. I delved into choropleth maps, stacked bar charts, line charts, bubbles, and heat maps, trying to strike a balance between clarity and simplicity.
+        </p>
+        <p>The decision to go with the bar graph didn't come easy. After all the searching, it just seemed like the most practical choice to represent the number of deaths for each cause in each state. Sometimes, the straightforward approach turns out to be the most effective.
+        </p>
+        <h2>Visualization Narrative</h2>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PlkeITLhrUI?si=9pBnjlhxWNrcGNq7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
